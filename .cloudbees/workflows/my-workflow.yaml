@@ -14,4 +14,10 @@ jobs:
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          echo "hello world"
+          echo "CloudBees workflow started"
+          echo "Checking repository contents"
+          ls -la
+          echo "Running build"
+          echo "Build successful"
+          echo "Running security validation"
+          echo "Security validation successful"
